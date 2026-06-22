@@ -11,6 +11,11 @@ cask "weatheroverlay" do
   # The exact name of your .app file inside the zip/dmg
   app "WeatherOverlay.app"
 
+  postflight do
+    system_command "xattr",
+                   args: ["-cr", "#{appdir}/WeatherOverlay.app"]
+  end
+
   # Optional: Automatically update checking
   livecheck do
     url :url
