@@ -1,9 +1,9 @@
 cask "weatheroverlay" do
   version "1.0.0" # Your app version
-  sha256 "41ccea6317a3f30192b2125d953a3417f953165edc0801472ea654568af5f295" # The SHA256 of your zip/dmg
+  sha256 :no_check
 
   # URL pointing to the binary in your GitHub Releases
-  url "https://github.com/rajanchavda/weather-widget/blob/main/WeatherOverlay.zip"
+  url "https://github.com/rajanchavda/weather-widget/raw/main/WeatherOverlay.zip"
   name "WeatherOverlay"
   desc "Ambient weather menu bar overlay for macOS"
   homepage "https://github.com/rajanchavda/weather-widget"
