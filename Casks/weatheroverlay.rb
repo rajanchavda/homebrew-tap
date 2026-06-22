@@ -1,4 +1,4 @@
-cask "WeatherOverlay" do
+cask "weatheroverlay" do
   version "1.0.0" # Your app version
   sha256 "41ccea6317a3f30192b2125d953a3417f953165edc0801472ea654568af5f295" # The SHA256 of your zip/dmg
 
