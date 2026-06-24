@@ -1,5 +1,5 @@
 cask "weatheroverlay" do
-  version "1.0.8" # Your app version
+  version "1.0.9" # Your app version
   sha256 :no_check
 
   # URL pointing to the binary in your GitHub Releases
