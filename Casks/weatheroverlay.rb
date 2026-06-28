@@ -1,20 +1,24 @@
 cask "weatheroverlay" do
-  version "1.6.3"
-  sha256 "2011231f99a2a889af664a9e345f6143b68cf105c428ad36d3f158c87da92297"
+  version "1.6.3" # Your app version
+  sha256 :no_check
 
-  url "https://github.com/rajanchavda/weather-widget/releases/download/v#{version}/WeatherOverlay.zip"
+  # URL pointing to the binary in your GitHub Releases
+  url "https://github.com/rajanchavda/weather-widget/raw/main/WeatherOverlay.zip"
   name "WeatherOverlay"
   desc "Ambient weather menu bar overlay for macOS"
   homepage "https://github.com/rajanchavda/weather-widget"
 
+  # The exact name of your .app file inside the zip/dmg
   app "WeatherOverlay.app"
 
   postflight do
     system_command "xattr",
-                   args: ["-cr", "\#{appdir}/WeatherOverlay.app"]
+                   args: ["-cr", "#{appdir}/WeatherOverlay.app"]
   end
 
-  zap trash: [
-    "~/.gemini/antigravity-cli/brain/7fcdcce5-12c9-4da4-b893-a73781ca8854"
-  ]
+  # Optional: Automatically update checking
+  livecheck do
+    url :url
+    strategy :github_latest
+  end
 end
