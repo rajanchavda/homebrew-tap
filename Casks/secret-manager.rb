@@ -1,6 +1,6 @@
 cask "secret-manager" do
-  version "1.0.0"
-  sha256 "51f0b9b40797a5302fe68b351e5c1cd9b06dfeb0ea72890249b81c369bea0781"
+  version "1.1.0"
+  sha256 "6f118444f7b884352084cdef971eddc4b9f6888db524b3944e4f87e54fcae888"
 
   url "https://github.com/rajanchavda/security-manager/releases/download/v#{version}/Secret-Manager-#{version}.dmg"
   name "Secret Manager"
