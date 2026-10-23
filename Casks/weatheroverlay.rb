@@ -1,6 +1,6 @@
 cask "weatheroverlay" do
-  version "2.4.1"
-  sha256 "538fca9881aefcc5a031919a8c83f299d358b0206a3db5326aaa81a690787e88"
+  version "2.5.0"
+  sha256 "3da1c53366d0c2b7e01a39ecb141f1ab278194bc189b6ee5a45dacfd5f83ebbd"
 
   url "https://github.com/rajanchavda/weather-widget/releases/download/v#{version}/WeatherOverlay.zip"
   name "WeatherOverlay"
