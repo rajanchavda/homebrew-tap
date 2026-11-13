@@ -1,6 +1,6 @@
 cask "readme" do
-  version "1.3"
-  sha256 "052733c8c5717cae24b61afd251db3341294231d68eeced2c8f78de7c1396017"
+  version "1.4"
+  sha256 "ad55a3598b909bbf65b19c01d9749852f5fc1da9a1781d944bd40a2a80061cfe"
 
   url "https://github.com/rajanchavda/readme/releases/download/v#{version}/Readme-#{version}.dmg"
   name "Readme"
